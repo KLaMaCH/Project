@@ -13,8 +13,6 @@ import java.util.concurrent.TimeUnit;
  * Created by kolchanov on 02.06.15.
  */
 
-
-
 public class TestGoogleSearch {
 
     private WebDriver driver;
