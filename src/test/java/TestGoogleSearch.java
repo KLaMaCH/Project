@@ -33,15 +33,14 @@ public class TestGoogleSearch {
         search.sendKeys("Level Up");
         search.submit();
         try {
-            Thread.sleep(100);
+            Thread.sleep(200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         List<WebElement> searchString = driver.findElements(By.xpath("//a[contains(.,'Level Up') or contains(.,'level up') or contains(.,'Level UP')]"));
         for(WebElement element: searchString){
-            Assert.assertNotEquals(-1, element.getText().toLowerCase().indexOf("level up"));
+            Assert.assertTrue(element.getText().toLowerCase().contains("level up"));
         }
-
     }
 
     @AfterMethod
