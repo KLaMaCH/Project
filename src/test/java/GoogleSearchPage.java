@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by kolchanov on 02.06.15.
  */
-public class GoogleSearch {
+public class GoogleSearchPage {
 
         @FindBy(name = "q")
         private WebElement searchBox;
@@ -21,7 +21,7 @@ public class GoogleSearch {
         @CacheLookup
         private List<WebElement> searchString;
 
-        public GoogleSearch(WebDriver driver) {
+        public GoogleSearchPage(WebDriver driver) {
 
             PageFactory.initElements(driver, this);
 

@@ -19,8 +19,8 @@ public class TestHolder {
     @Test
     public void test() {
         driver.get("http://www.google.com");
-        GoogleSearch googleSearch = new GoogleSearch(driver);
-        googleSearch.searchMatching(STRING_MATCH);
+        GoogleSearchPage googleSearchPage = new GoogleSearchPage(driver);
+        googleSearchPage.searchMatching(STRING_MATCH);
     }
 
     @AfterMethod
